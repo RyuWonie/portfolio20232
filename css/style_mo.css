@@ -1,0 +1,240 @@
+header{
+    position: fixed;
+    bottom: -10vw;
+    left: 0;
+    width: 100%;
+    height: 20vw;
+    background-color: #1e1e4b;
+}
+header .navBtn{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    border: 1vw solid #ddd;
+    background-color: #1e1e4b;
+    position: absolute;
+    top: -4vw;
+    left: 45.5vw;
+    z-index: 50;
+    transition: all 1s;
+}
+header .navBtn span{
+    display: block;
+    margin: 0 auto;
+    width: 3vw;
+    height: 0.8vw;
+    border-radius: 10px;
+    background-color: #ddd;
+    transition: all 1s;
+}
+header .navBtn span:first-child{
+    margin-top: 0;
+}
+header .navBtn span:last-child{
+    margin-top: 3px;
+}
+header .navBtn.active span:first-child{
+    margin-top: 2px;
+    transform: rotate(45deg);
+}
+header .navBtn.active span:last-child{
+    margin-top: -3px;
+    transform: rotate(-45deg);
+}
+header .navBtn.active{
+    width: 8vw;
+    height: 8vw;
+}
+header nav{
+    width: 90vw;
+    height: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+header nav ul li{
+    display: block;
+    font-family: 'ylee';
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 5vw;
+}
+header nav ul li.under{
+    text-transform: capitalize;
+}
+
+section{
+    width: 100%;
+    margin: 10vw 0;
+}
+.wrap{
+    padding: 4vw 0;
+}
+
+.s1, .s4, .s5{
+    height: 100vh;
+}
+.s1 .wrap{
+    padding-top: 70vw;
+    text-align: center;
+}
+.s1 .wrap h1{
+    font-family: 'ylee';
+    font-size: 90px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.s1 .wrap p{
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.s2 .wrap .item{
+    width: 80vw;
+    margin: 10vw auto;
+}
+.s2 .wrap .item .thum{
+    width: 100%;
+    height: 40vw;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+.s2 .wrap .item .thum img{
+    width: 100%;
+}
+.s2 .wrap .item .border{
+    width: 90%;
+    height: 0.6vw;
+    background-color: #fff;
+    margin: 5vw auto;
+    border-radius: 5vw;
+}
+.s2 .wrap .item .tit{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'SBaggroB';
+}
+.s2 .wrap .item:last-child{
+    margin-top: 14vw;
+}
+
+.s3 .wrap{
+    width: 80vw;
+    margin: 0 auto;
+}
+.s3 .wrap .row{
+    display: flex;
+    justify-content: space-between;
+}
+.s3 .wrap .gall{
+    margin: 5vw 0;
+    border-radius: 1vw;
+}
+.s3 .wrap .small{
+    width: 35vw;
+    height: 35vw;
+    background-color: #fff;
+}
+.s3 .wrap .medium{
+    width: 80vw;
+    height: 35vw;
+    background-color: #ddd;
+    margin-bottom: 10vw;
+}
+.s3 .wrap .large{
+    width: 80vw;
+    height: 80vw;
+    background-color: #aaa;
+}
+
+.s4 .wrap{
+    width: 80vw;
+    padding-top: 10vw;
+    margin: 0 auto;
+}
+.s4 .wrap article{
+    width: 80vw;
+    font-size: 14px;
+    line-height: 30px;
+}
+.s4 .wrap article span{
+    font-size: 16px;
+    padding: 0 1vw;
+    font-family: 'ladio';
+}
+.s4 .wrap article strong{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.s4 .wrap .fi{
+    text-align: left;
+}
+.s4 .wrap .se{
+    text-align: center;
+}
+.s4 .wrap .th{
+    text-align: right;
+}
+.s4 .wrap figure{
+    width: 72vw;
+    margin: 10vw auto;
+}
+.s4 .wrap figure img{
+    width: 100%;
+}
+.s4 .pc{
+    display: none;
+}
+
+.s5{
+    margin-bottom: 0;
+    padding: 0;
+}
+.s5 .wrap{
+    width: 80vw;
+    margin: 0 auto;
+}
+.s5 .wrap .item{
+    width: 80vw;
+    margin: 8vw auto;
+    border-radius: 2vw;
+    border: 1vw solid #111;
+    overflow: hidden;
+    box-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+}
+.s5 .wrap .item .Tit{
+    padding: 3vw 5vw;
+    font-family: 'SBaggroB';
+    letter-spacing: 0.2vw;
+}
+.s5 .wrap .item .ma{
+    background-color: #fff;
+    color: #1e1e4b;
+    font-size: 16px;
+}
+.s5 .wrap .item .ma>li{
+    padding: 0.5vw 0;
+    line-height: 7vw;
+}
+.s5 .wrap .item .ma>li::before{
+    content: '▪';
+    font-size: 18px;
+    margin: 0 2vw 0 4vw;
+}
+.s5 .wrap .item .ma>li span{
+    padding-right: 2vw;
+}
+.s5 .wrap .item .ma .su{
+    font-size: 14px;
+}
+.s5 .wrap .item .ma .su>li{}
+.s5 .wrap .item .ma .su>li::before{
+    content: '−';
+    font-size: 16px;
+    margin: 0 2vw 0 20vw;
+}

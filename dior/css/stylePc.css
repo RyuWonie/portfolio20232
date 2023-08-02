@@ -1,0 +1,14 @@
+@media all and (min-width:1200px) {
+
+    .mo{display: none;}
+
+    .s1 .btn .baro:hover, .s1 .btn input:hover{
+        box-shadow: inset 5px 5px 6px 1px rgba(30,30,75,0.5);
+        color: #1e1e4b;
+    }
+
+    .s4 .color .palet p, .s4 .typo .card .item>p{
+        font-size: 18px;
+    }
+
+} /* 1200px */
