@@ -160,6 +160,9 @@ header.on{
     height: 100%; 
     background: #bb145342;
 }
+#gall article ul #gall18 .relative:after{
+    width: 0;
+}
 #gall article ul li div { 
     position: absolute;
 }
@@ -248,6 +251,15 @@ header.on{
 #gall article ul li#gall6 .gaImage { background-image: url(../images/gall7.JPG);}
 #gall article ul li#gall7 .gaImage { background-image: url(../images/gall8.JPG);}
 #gall article ul li#gall8 .gaImage { background-image: url(../images/gall9.JPG);}
+#gall article ul li#gall9 .gaImage { background-image: url(../images/gall10.jpg);}
+#gall article ul li#gall10 .gaImage { background-image: url(../images/gall11.jpg);}
+#gall article ul li#gall11 .gaImage { background-image: url(../images/gall12.jpg);}
+#gall article ul li#gall12 .gaImage { background-image: url(../images/gall13.jpg);}
+#gall article ul li#gall13 .gaImage { background-image: url(../images/gall14.jpg);}
+#gall article ul li#gall14 .gaImage { background-image: url(../images/gall15.jpg);}
+#gall article ul li#gall15 .gaImage { background-image: url(../images/gall16.jpg);}
+#gall article ul li#gall16 .gaImage { background-image: url(../images/gall17.jpg);}
+#gall article ul li#gall17 .gaImage { background-image: url(../images/gall19.jpg);}
 
 .s2{
     width: 100vw;

@@ -554,7 +554,7 @@ header nav .gnb li{
 }
 .s4 .toon .tWrap .tlist{
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 11%;
 }
 .s4 .toon .tWrap .tlist li{
@@ -588,7 +588,7 @@ header nav .gnb li{
     width: 725px;
     height: 685px;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 0;
     border-radius: 5px;
     background-color: #fff;
@@ -607,7 +607,7 @@ header nav .gnb li{
 }
 .s4 .toon .tTit{
     color: #fff;
-    bottom: 55px;
+    bottom: 90px;
     right: 200px;
     display: none;
 }

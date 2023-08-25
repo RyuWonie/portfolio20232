@@ -94,8 +94,18 @@ section{
     margin: 50px 0;
 }
 .s3 .wrap .large{
-    width: 400px;
-    height: 400px;
+    margin-top: 50px;
+    width: 446px;
+    height: 625px;
+}
+.s3 .gall3 img{
+    margin-top: -20px;
+}
+.s3 .gall5 img{
+    margin-top: -40px;
+}
+.s3 .gall:hover img{
+    transform: scale(1.1);
 }
 
 .s4{

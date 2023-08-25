@@ -9,6 +9,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Monoplex';
+    src: url(../../pages/PettyDust/font/MonoplexKRWideNerd-Regular.woff2);
+}
+@font-face{
+    font-family: 'MonoplexB';
+    src: url(../../pages/PettyDust/font/MonoplexKRWideNerd-Bold.woff2);
+}
 /* font end */
 
 /* reset */
@@ -228,6 +236,9 @@ header h1{
     display: flex;
     justify-content: space-around;
 }
+.s4 .color .palet{
+    width: 85vw;
+}
 .s4 .item{
     width: 13vw;
     margin: 0 auto;
@@ -238,9 +249,11 @@ header h1{
     border-radius: 50%;
     box-shadow: 3px 5px 10px rgba(30,30,75,0.4);
 }
-.s4 .color .palet .coe{background-color: #eee9ee;}
-.s4 .color .palet .cob{background-color: #b28d8f;}
-.s4 .color .palet .co9{background-color: #996666;}
+.s4 .color .palet .cob{background-color: #bed9e2;}
+.s4 .color .palet .co9{background-color: #99ccc4;}
+.s4 .color .palet .co8{background-color: #84b6b4;}
+.s4 .color .palet .coa{background-color: #88aa82;}
+.s4 .color .palet .co6{background-color: #996666;}
 .s4 .color .palet p, .s4 .typo .card .item p{
     text-align: center;
     padding-top: 3vh;
@@ -258,17 +271,17 @@ header h1{
     position: relative;
 }
 .s4 .typo .card .po p{
-    font-size: 30px;
+    font-size: 18px;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.s4 .typo .card .item:first-child{
-    font-family: 'arial';
+.s4 .typo .card .item{
+    font-family: 'Monoplex';
 }
 .s4 .typo .card .item .B{
-    font-weight: 900;
+    font-family: 'MonoplexB';
 }
 .s4 .typo .card .item>p{
     text-transform: capitalize;

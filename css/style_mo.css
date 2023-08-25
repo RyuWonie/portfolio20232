@@ -79,7 +79,7 @@ section{
     height: 100vh;
 }
 .s1 .wrap{
-    padding-top: 70vw;
+    padding-top: 32vh;
     text-align: center;
 }
 .s1 .wrap h1{
@@ -133,6 +133,11 @@ section{
 .s3 .wrap .gall{
     margin: 5vw 0;
     border-radius: 1vw;
+    overflow: hidden;
+}
+.s3 .wrap .gall img{
+    width: 100%;
+    transition: all 1s;
 }
 .s3 .wrap .small{
     width: 35vw;
@@ -147,8 +152,15 @@ section{
 }
 .s3 .wrap .large{
     width: 80vw;
-    height: 80vw;
+    height: 112vw;
     background-color: #aaa;
+}
+
+.s3 .gall3 img{
+    margin-top: -3vh;
+}
+.s3 .gall5 img{
+    margin-top: -6vh;
 }
 
 .s4 .wrap{
