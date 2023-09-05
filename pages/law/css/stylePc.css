@@ -1,0 +1,280 @@
+@media all and (min-width:1200px) {
+
+    .mo{display: none;}
+    .pc{display: block;}
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 150px;
+        border-bottom: #294981 2px solid;
+        order: 1;
+    }
+    header .logo{
+        width: 250px;
+        margin: 0 auto;
+    }
+    header .logo img{
+        width: 100%;
+    }
+
+    header .srcBtn .mo{display: none;}
+    header .menuBtn img{display: none;}
+
+    header .menuBtn button{
+        border: 0;
+        background-color: transparent;
+        color: #304f86;
+        font-size: 22px;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        right: 200px;
+        padding: 15px;
+    }
+
+    header .menuBtn button:hover{
+        background-color: #304f86;
+        color: #fff;
+    }
+
+    .bn{display: none;}
+
+    .search{
+        position: unset;
+        padding-top: 300px;
+        height: auto;
+        order: 2;
+    }
+    .search .inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .search .inner form{
+        width: 800px;
+        height: 80px;
+        border: 4px solid #294981;
+        z-index: 3;
+        order: 3;
+    }
+    .search form select{
+        width: 220px;
+    }
+    .search form input{
+        width: 460px;
+    }
+    .search form button{
+        width: 120px;
+    }
+    .search .inner p{
+        font-size: 24px;
+        order: 1;
+    }
+    .search .inner figure{
+        position: absolute;
+        top: 234px;
+        right: 565px;
+        order: 2;
+    }
+    .search .my{display: none;}
+    .search .pcCon{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .search .gove{
+        width: 200px;
+        height: 350px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        border: 0;
+    }
+    .search .gove article{
+        display: unset;
+        padding: 40px 0 0 0;
+        text-align: center;
+    }
+    .search .gove article h3{
+        margin-right: 0;
+    }
+    .search .gove .con figure, .search .law figure{
+        width: 100px;
+        margin: 10px auto;
+    }
+    .search .gove .con{
+        display: unset;
+    }
+    .search .gove .con form select, .search .law form select{
+        display: block;
+        border: 4px solid #294981;
+        width: 150px;
+        margin: 10px auto;
+        height: 4vh;
+    }
+    .search .law{
+        width: 200px;
+        height: 350px;
+        margin: 0 40px;
+        border-radius: 10px;
+        border: 0;
+    }
+    .search .law article h3{
+        padding-top: 40px;
+    }
+    .search .cate{
+        width: 320px;
+        height: 330px;
+        border-radius: 10px;
+    }
+    .search .cate article h3{
+        padding: 20px 0 10px 0;
+    }
+    .search .cate .item{
+        width: 30%;
+        margin: 0;
+        padding: 50px 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .search .cate .item img{
+        width: 60%;
+    }
+    .search .box{
+        border: 0;
+    }
+
+    .subBn{display: none;}
+
+    .tabs{display: none;}
+
+    .s2{
+        order: 3;
+    }
+    .s2 .s2Con{
+        display: flex;
+        justify-content: center;
+    }
+    .s2 .s2Con .item{
+        width: 350px;
+        height: 250px;
+        background-color: #e2f3ff;
+        margin: 80px 20px 0;
+        border-radius: 15px;
+    }
+    .s2 .s2Con .item h3{
+        text-align: center;
+        padding: 30px 0 20px;
+    }
+    .s2 .s2Con .item li a{
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px;
+        padding: 0 10px;
+    }
+    .s2 .s2Con .item p{
+        font-size: 30px;
+        text-align: center;font-weight: 700;
+        margin-top: 10px;
+    }
+    .s2 .s2Con .item li a:hover{
+        text-decoration: underline 1px #294981;
+        text-decoration-style: dashed;
+    }
+    .s2 .new, .reg, .ord, .per{
+        display: block;
+    }
+
+    .menuBtn.Gnb .pcnav{
+        background-color: #304f86;
+        color: #fff;
+    }
+
+    .menu{
+        position: absolute;
+        left: 0;
+        padding-top: 20vh;
+        display: none;
+        height: 109vh;
+    }
+
+    .menu .dark{display: none;}
+
+    .menu .gnb {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu .gnb>li>a{
+        width: 400px;
+        line-height: 40px;
+        background-color: #fff;
+        color: #294981;
+        border-bottom: #304f86 2px solid;
+        margin: 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .menu .gnb .sub{
+        display: unset;
+        font-size: 14px;
+    }
+    .menu .gnb .sub li{
+        margin: 0 30px;
+    }
+    .menu .gnb .sub li a:hover{
+        text-decoration: underline 1px #304f86;
+    }
+    .menu .gnb>li:nth-child(1){
+        order: 1;
+    }
+    .menu .gnb>li:nth-child(2){
+        order: 2;
+    }
+    .menu .gnb>li:nth-child(3){
+        order: 3;
+    }
+    .menu .gnb>li:nth-child(4){
+        order: 5;
+    }
+    .menu .gnb>li:nth-child(5){
+        order: 6;
+    }
+    .menu .gnb>li:nth-child(6){
+        order: 7;
+    }
+    .menu .gnb>li:nth-child(7){
+        order: 4;
+    }
+    .menu .miniGnb{display: none;}
+    .menu .menuF{
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    footer{
+        order: 4;
+    }
+    footer .infoF {
+        justify-content: center;
+        font-size: 14px;
+    }
+    footer .infoF p:last-child::after{
+        content: none;
+    }
+    footer .con{
+        justify-content: center;
+    }
+    footer h2{
+        text-align: center;
+    }
+    footer address{
+        margin-left: 0;
+        padding-top: 3vh;
+        font-size: 14px;
+    }
+
+} /* 1200px */

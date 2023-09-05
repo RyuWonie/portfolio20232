@@ -1,0 +1,449 @@
+@font-face{
+    font-family: 'pretendard';
+    src: url(../../../fonts/PretendardVariable.woff2);
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* reset end */
+body{
+    position: relative;
+}
+html{
+    color: #363636;
+    font-family: 'pretendard';
+}
+
+.pc{
+    display: none;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+header .srcBtn{
+    width: 20%;
+    text-align: center;
+}
+header .srcBtn img{
+    width: 35%;
+}
+header .logo{
+    width: 60%;
+}
+header .logo img{
+    width: 50vw;
+    padding: 2.3vh;
+}
+header .menuBtn{
+    width: 20%;
+    text-align: center;
+}
+header .menuBtn img{
+    width: 35%;
+}
+
+header .srcBtn img, header .menuBtn img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .srcBtn .pc{
+    display: none;
+}
+
+header .srcBtn .blue, header .menuBtn .blue{
+    display: none;
+}
+
+header .srcBtn.on .blue, header .menuBtn.on .blue{
+    display: block;
+}
+
+header .srcBtn.on .transparent, header .menuBtn.on .transparent{
+    display: none;
+}
+
+.bn{
+    width: 100vw;
+    padding-top: 10vh;
+}
+.bn img{
+    width: 100%;
+}
+
+.tabTit{
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 5vh;
+    display: flex;
+}
+.tabTit>li>a{
+    display: block;
+    width: 100%;
+}
+.tabTit>li{
+    padding: 0.5vh 3vw;
+    background-color: #294981;
+    color: #fff;
+}
+.tabTit>li.act{
+    background-color: #e2f3ff;
+    color: #363636;
+}
+
+.tabMenu{
+    width: 100vw;
+    font-size: 12px;
+    background-color: #e2f3ff;
+    line-height: 6vh;
+    font-weight: normal;
+}
+.tabMenu .reg, .ord, .per{
+    display: none;
+}
+.tabMenu .item ul li a{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3vw;
+}
+.tabMenu .item ul li span{
+    font-weight: 900;
+}
+.tabMenu .item ul li span::before{
+    content: '📌';
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+.subBn{
+    width: 50vw;
+    position: relative;
+}
+.subBn .bnCon{
+    width: 90%;
+    margin: 1vh auto;
+}
+.subBn .bnCon img{
+    width: 100%;
+}
+.subBn .prv, .subBn .nxt{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 11vh;
+    background-color: rgba(0,0,0,0.4);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+.subBn button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.subBn .prv{
+    left:30vw;
+}
+
+.subBn .prv span{
+    transform: rotate(45deg);
+    margin-left: 7px;
+}
+
+.subBn .nxt{
+    left:40vw;
+}
+
+.subBn .nxt span{
+    transform: rotate(-135deg);
+    margin-left: 6px;
+}
+
+.subBn button span{
+    width: 1vw;
+    height: 0.5vh;
+    border-left: 2px solid #363636;
+    border-bottom: 2px solid #363636;
+    display: block;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 10vh;
+    z-index: 50;
+}
+.menu .miniGnb{
+    display: flex;
+    justify-content: center;
+    color: #38578b;
+    font-weight: 600;
+    margin: 2vh 0;
+}
+.menu .miniGnb li{
+    margin: 0 2vw;
+}
+.menu .dark{
+    margin: 3vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #38578b;
+}
+.menu .dark h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu .dark .box{
+    width: 20vw;
+    height: 4vh;
+    border-radius: 999px;
+    border: #294981 2px solid;
+    margin-left: 5vw;
+}
+.menu .dark .box .cir{
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    border: #294981 2px solid;
+    background-color: #e2f3ff;
+    margin: 0.25vh 1.5vw;
+}
+.menu .gnb{
+    text-align: center;
+}
+.menu .gnb>li>a{
+    display: block;
+    width: 100vw;
+    line-height: 7vh;
+    background-color: #294981;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid #e2f3ff;
+}
+.menu .gnb .sub{
+    display: none;
+    padding: 1vh 0;
+}
+.menu .gnb .sub li{
+    line-height: 5vh;
+}
+.menu .menuF{
+    display: flex;
+}
+.menu .menuF .bug, .menu .menuF .survay{
+    width: 50vw;
+    height: 4vh;
+    text-align: center;
+    background-color: #e2f3ff;
+    padding: 3vh 0 4vh 0;
+    color: #38578b;
+    font-size: 16px;
+    font-weight: 700;
+}
+.menu .menuF .bug{
+    border-right: #294981 2px solid;
+}
+
+.search{
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 10vh;
+    z-index: 50;
+}
+.search .inner form{
+    display: flex;
+    width: 85vw;
+    height: 5vh;
+    margin: 0 auto;
+    border: #294981 2px solid;
+}
+.search .inner form #searchTit{
+    border: none;
+    background-color: #e2f3ff;
+    width: 30%;
+    padding: 0 1vw;
+}
+.search .inner form input{
+    border: none;
+    background-color: transparent;
+    width: 50%;
+    padding: 0 2vw;
+}
+.search .inner form button{
+    border: none;
+    background-color: #e2f3ff;
+    width: 20%;
+}
+.search .inner p{
+    font-size: 16px;
+    text-align: center;
+    padding: 2vh 0;
+    color: #38578b;
+}
+.search .inner p span{
+    font-weight: 700;
+}
+.search .my{
+    width: 100vw;
+    height: 25vh;
+    border: 10px solid #294981;
+    box-sizing: border-box;
+}
+.search .my h3{
+    font-size: 16px;
+    color: #38578b;
+    padding: 1vh 0 1vh 2vw;
+    background-color: #e2f3ff;
+}
+.search .my .mysrch{
+
+}
+.search .gove{
+    width: 100vw;
+    height: 20vh;
+    background-color: #e2f3ff;
+    border-top: #294981 2px solid;
+    border-bottom: #294981 2px solid;
+    box-sizing: border-box;
+}
+.search .gove article{
+    display: flex;
+    padding: 1vh 4vw;
+    align-items: baseline;
+}
+.search .gove article h3{
+    margin-right: 4vw;
+}
+.search .gove .con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search .gove .con figure{
+    display: block;
+    width: 20vw;
+}
+.search .gove .con figure img{
+    width: 100%;
+}
+.search .gove .con form{
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+.search .gove .con form select{
+    width: 30vw;
+    height: 4vh;
+    border: #294981 2px solid;
+    background-color: #fff;
+}
+.search .law{
+    width: 50vw;
+    height: 25vh;
+    background-color: #e2f3ff;
+    text-align: center;
+    padding: 1vh 0;
+    border-right: #294981 2px solid;
+    box-sizing: border-box;
+}
+.search .law figure{
+    display: block;
+    width: 20vw;
+    margin: 0 auto;
+    padding: 2vh 0;
+}
+.search .law figure img{
+    width: 100%;
+}
+.search .cate{
+    width: 50vw;
+    height: 23vh;
+    background-color: #e2f3ff;
+    text-align: center;
+    padding: 1vh 0;
+}
+.search .box{
+    display: flex;
+    border-bottom: #294981 2px solid;
+    box-sizing: border-box;
+}
+.cate .cateslide{
+    background-color: #fff;
+    color: #38578b;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 2vh;
+}
+.search .cate .item{
+    margin: 0 1vw;
+    padding: 3vh 0;
+}
+.search .cate .item img{
+    width: 6vw;
+    margin-bottom: 1vh;
+}
+
+footer{
+    width: 100vw;
+    background-color: #fff;
+    margin: 5vh 0;
+}
+footer h2{
+    display: block;
+    filter: grayscale(100);
+    width: 10vw;
+    padding-top: 2vh;
+}
+footer .infoF{
+    display: flex;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #bed6e4;
+    font-weight: bold;
+}
+footer .infoF p::after{
+    content: '|';
+    margin: 0 2vw;
+}
+footer .con{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+footer address{
+    font-size: 12px;
+    padding-top: 4vh;
+    font-style: normal;
+    margin-left: 4vw;
+}

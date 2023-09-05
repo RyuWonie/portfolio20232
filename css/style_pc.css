@@ -39,9 +39,13 @@ section{
     letter-spacing: 10px;
 }
 
+.s2{
+    height: 200vh;
+}
 .s2 .wrap{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .s2 .wrap .item{
     width: 40vw;

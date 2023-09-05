@@ -1,0 +1,78 @@
+@media all and (min-width:1200px) {
+
+    .mo{display: none;}
+
+    header h1{
+        font-size: 50px;
+        padding-top: 10vh;
+    }
+
+    .s1 figure img{
+        width: 35vw;
+    }
+
+    .s1 .btn{
+        width: 550px;
+        height: 80px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .s1 .btn .baro{
+        width: 246px;
+        height: 76px;
+    }
+
+    .s1 .btn .baro p{
+        left: 49%;
+        transform: translate(-50%, -50%);
+        font-size: 19px;
+    }
+
+    .s1 .btn form input{
+        width: 250px;
+        height: 80px;
+        font-family: 'pretendard';
+        font-size: 18px;
+    }
+
+    .s1 .btn .baro:hover, .s1 .btn input:hover{
+        box-shadow: inset 5px 5px 6px 1px rgba(30,30,75,0.5);
+        color: #1e1e4b;
+    }
+
+    .s2 .item .tit h3{
+        padding: 0 1vw;
+    }
+
+    .s4 .item{
+        margin: 1vw;
+    }
+
+    .s4 .color .palet, .s4 .typo .card{
+        justify-content: center;
+    }
+
+    .s4 .color .palet p, .s4 .typo .card .item>p{
+        font-size: 18px;
+    }
+
+    .s4 .color .palet .co, .s4 .typo .card .po{
+        width: 8vw;
+        height: 8vw;
+        margin: 0 auto;
+    }
+
+    .s4 .typo .card .po p{
+        font-size: 50px;
+        transform: translate(-50%, -35%);
+    }
+
+    .topBtn input{
+        width: 75px;
+        height: 75px;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+} /* 1200px */ 
